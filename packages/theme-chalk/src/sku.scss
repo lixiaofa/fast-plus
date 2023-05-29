@@ -1,0 +1,132 @@
+@use 'sass:map';
+
+@use 'common/var' as *;
+@use 'mixins/mixins' as *;
+@use 'mixins/utils' as *;
+@use 'mixins/var' as *;
+
+@include b(sku) {
+  @include set-component-css-var('sku', $sku);
+}
+
+@include b(sku) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  padding: 15px 15px 70px 15px;
+  min-height: 50%;
+  max-height: 80%;
+  overflow-y: visible;
+  font-size: getCssVar('sku', 'font-size');
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include e(symbol) {
+    font-size: getCssVar('sku', 'font-size-medium');
+    vertical-align: bottom;
+  }
+  @include e(num) {
+    font-weight: getCssVar('font-weight-primary');
+    font-size: getCssVar('sku', 'font-size-extra-large-max');
+    vertical-align: bottom;
+    word-wrap: break-word;
+  }
+  @include e(img) {
+    margin: 4px 0 4px 4px;
+    border-radius: getCssVar('sku', 'border-radius-small');
+  }
+  @include e(name) {
+    padding: 8px;
+  }
+  @include m(active) {
+    background: getCssVar('sku', 'active-row-bg-color') !important;
+
+    color: getCssVar('sku', 'active-row-text-color') !important;
+  }
+  @include m(disabled) {
+    background: getCssVar('sku', 'disabled-row-bg-color');
+    color: getCssVar('sku', 'disabled-row-text-color');
+    cursor: not-allowed;
+  }
+}
+
+@include b(sku-header) {
+  display: flex;
+
+  @include e(wrapper) {
+    display: grid;
+    align-content: end;
+    margin-left: 15px;
+  }
+  @include e(price) {
+    margin-left: -2px;
+    color: getCssVar('sku', 'active-row-text-color');
+  }
+}
+
+@include b(sku-body) {
+  @include e(wrapper) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 44px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@include b(sku-header-item) {
+  margin-top: 8px;
+  color: getCssVar('sku', 'header-text-color');
+  font-size: 12px;
+  line-height: 16px;
+}
+@include b(sku-row) {
+  @include e(label) {
+    padding-bottom: 12px;
+  }
+  @include m(multiple) {
+    color: getCssVar('sku', 'header-text-color');
+  }
+}
+
+@include b(sku-row-item) {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 40px;
+  margin: 0 12px -5px 0;
+  font-size: getCssVar('sku', 'font-size-small');
+  line-height: 16px;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  color: getCssVar('sku', 'text-color');
+  border-radius: 4px;
+  cursor: pointer;
+  background: getCssVar('sku', 'row-bg-color');
+}
+
+@include b(sku-stepper) {
+  display: flex;
+  justify-content: space-between;
+  @include m(quota) {
+    color: getCssVar('sku', 'active-row-text-color');
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}
