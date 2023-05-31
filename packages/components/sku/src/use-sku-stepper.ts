@@ -1,10 +1,3 @@
-/*
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-04-03 17:25:55
- * @LastEditTime: 2023-05-22 09:51:57
- * @LastEditors: 司马老贼
- */
 import { computed, ref, watch } from 'vue'
 
 import { showToast } from 'vant'

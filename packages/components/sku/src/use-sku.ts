@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-03-02 11:34:52
- * @LastEditTime: 2023-05-29 10:00:03
+ * @LastEditTime: 2023-05-31 17:55:28
  * @LastEditors: 司马老贼
  */
 import { computed, ref, watch } from 'vue'
@@ -30,7 +30,7 @@ export const useSku = (
   props: SkuProps,
   emit: SetupContext<SkuEmits>['emit']
 ) => {
-  const visible = ref(false)
+  const visible = ref(true)
   const selectedNum = ref(1)
 
   const selectedSkuMap = ref<SelectedSkuMap>({})
