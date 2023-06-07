@@ -1,4 +1,4 @@
-import { isFunction } from '@element-plus/utils'
+import { isFunction } from '@fast-plus/utils'
 
 import type { ObjectDirective } from 'vue'
 

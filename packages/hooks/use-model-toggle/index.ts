@@ -5,8 +5,8 @@ import {
   definePropType,
   isBoolean,
   isClient,
-} from '@element-plus/utils'
-import type { ExtractPropType } from '@element-plus/utils'
+} from '@fast-plus/utils'
+import type { ExtractPropType } from '@fast-plus/utils'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
 
 import type { ComponentPublicInstance, ExtractPropTypes, Ref } from 'vue'

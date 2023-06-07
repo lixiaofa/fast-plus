@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-02-22 19:10:47
- * @LastEditTime: 2023-05-29 09:59:45
+ * @LastEditTime: 2023-06-05 18:35:24
  * @LastEditors: 司马老贼
 -->
 
@@ -42,7 +42,7 @@
         <SkuRowItem
           v-for="rowItem in item.v"
           :key="rowItem.id"
-          :class="{ 'el-sku--active': rowItem.active }"
+          :class="{ 'fs-sku--active': rowItem.active }"
           @click="selectedSku(item, rowItem)"
         >
           <Image
@@ -62,7 +62,7 @@
         <SkuRowItem
           v-for="rowItem in item.v"
           :key="rowItem.id"
-          :class="{ 'el-sku--active': rowItem.active }"
+          :class="{ 'fs-sku--active': rowItem.active }"
           @click="selectedProperties(item, rowItem)"
         >
           <div
@@ -92,7 +92,7 @@
 <script lang="ts" setup>
 import { onBeforeMount } from 'vue'
 import { Image, Popup, showImagePreview } from 'vant'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@fast-plus/hooks'
 import { skuEmits, skuProps } from './sku'
 import 'vant/es/popup/style'
 import 'vant/es/image-preview/style'
@@ -108,7 +108,7 @@ import SkuActions from './sku-actions.vue'
 import { useSku } from './use-sku'
 
 defineOptions({
-  name: 'ElSku',
+  name: 'FsSku',
 })
 const ns = useNamespace('sku')
 

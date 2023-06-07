@@ -8,7 +8,7 @@ import {
   isClient,
   removeClass,
   throwError,
-} from '@element-plus/utils'
+} from '@fast-plus/utils'
 import { useNamespace } from '../use-namespace'
 
 import type { Ref } from 'vue'

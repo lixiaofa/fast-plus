@@ -3,7 +3,7 @@
   <el-tooltip-v2 aria-label="content" placement="top" content-class="scale-in">
     <template #trigger>
       <el-button circle
-        ><el-icon><Plus /></el-icon
+        ><el-icon> <Plus /> </el-icon
       ></el-button>
     </template>
     <div>content</div>

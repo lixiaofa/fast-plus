@@ -22,6 +22,7 @@ import { UserFilled } from '@element-plus/icons-vue'
 .demo-type {
   display: flex;
 }
+
 .demo-type > div {
   flex: 1;
   text-align: center;

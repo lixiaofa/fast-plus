@@ -1,5 +1,5 @@
 {
-  "name": "@element-plus/docs",
+  "name": "@fast-plus/docs",
   "private": true,
   "scripts": {
     "dev": "pnpm gen-locale && vitepress dev .",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@docsearch/js": "^3.1.0",
     "@element-plus/icons-vue": "^2.0.9",
-    "@element-plus/metadata": "workspace:*",
+    "@fast-plus/metadata": "workspace:*",
     "@vue/shared": "^3.2.37",
     "@vueuse/core": "^9.1.0",
     "axios": "^0.27.2",
@@ -26,9 +26,9 @@
   "devDependencies": {
     "@crowdin/cli": "^3.7.8",
     "@docsearch/react": "^3.1.0",
-    "@element-plus/build": "workspace:*",
-    "@element-plus/build-constants": "workspace:*",
-    "@element-plus/build-utils": "workspace:*",
+    "@fast-plus/build": "workspace:*",
+    "@fast-plus/build-constants": "workspace:*",
+    "@fast-plus/build-utils": "workspace:*",
     "@iconify-json/ri": "^1.1.3",
     "@types/markdown-it": "^12.2.3",
     "@vitejs/plugin-vue-jsx": "^1.3.10",

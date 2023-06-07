@@ -1,4 +1,4 @@
-import { isClient, isElement } from '@element-plus/utils'
+import { isClient, isElement } from '@fast-plus/utils'
 
 import type {
   ComponentPublicInstance,

@@ -102,10 +102,10 @@ For more bundlers ([Rollup](https://rollupjs.org/), [Vue CLI](https://cli.vuejs.
 
 #### Nuxt
 
-For Nuxt users, you only need to install `@element-plus/nuxt`.
+For Nuxt users, you only need to install `@fast-plus/nuxt`.
 
 ```shell
-npm install -D @element-plus/nuxt
+npm install -D @fast-plus/nuxt
 ```
 
 Then add the code below into your config file.
@@ -113,7 +113,7 @@ Then add the code below into your config file.
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@element-plus/nuxt'],
+  modules: ['@fast-plus/nuxt'],
 })
 ```
 

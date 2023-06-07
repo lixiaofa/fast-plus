@@ -17,14 +17,14 @@
 
 <script lang="ts" setup>
 import { Stepper } from 'vant'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@fast-plus/hooks'
 import 'vant/es/stepper/style'
 
 import { skuStepperEmits, skuStepperProps } from './sku-stepper'
 import { useSkuStepper } from './use-sku-stepper'
 
 defineOptions({
-  name: 'ElSkuStepper',
+  name: 'FSSkuStepper',
 })
 
 const ns = useNamespace('sku-stepper')

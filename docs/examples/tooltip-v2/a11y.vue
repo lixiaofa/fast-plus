@@ -2,7 +2,7 @@
   <el-tooltip-v2 :aria-label="title">
     <template #trigger>
       <el-button
-        ><el-icon><Delete /></el-icon
+        ><el-icon> <Delete /> </el-icon
       ></el-button>
     </template>
     {{ content }}

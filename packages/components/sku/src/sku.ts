@@ -2,11 +2,11 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-02-22 19:10:48
- * @LastEditTime: 2023-05-22 09:48:36
+ * @LastEditTime: 2023-06-06 11:38:16
  * @LastEditors: 司马老贼
  */
-import { buildProps, isBoolean, isObject, mutable } from '@element-plus/utils'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps, isBoolean, isObject, mutable } from '@fast-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@fast-plus/constants'
 
 import type { ExtractPropTypes, PropType } from 'vue'
 import type Sku from './sku.vue'
@@ -33,23 +33,22 @@ export type SelectedPropertyMap = Record<string, PropertiesVItem[]>
 
 export interface BaseListItem {
   id: number
-
   price: number
   discount: number
   stock_num: number
 }
-export type ListsItem = BaseListItem & Record<string, string>
+export type ListsItem = BaseListItem & Record<string, any>
 export interface SkuData {
-  price: [number, string]
+  price: string
   stock_num: number
   none_sku: boolean
   hide_stock: boolean
-  collection_id: [number, string]
+  collection_id: number
   tree: SkuItem[]
   list: ListsItem[]
 }
 export interface PropertiesVItem {
-  id: [number, string]
+  id: number
   name: string
   active: boolean
   price: number
@@ -57,7 +56,7 @@ export interface PropertiesVItem {
 }
 export interface PropertiesItem {
   k: string
-  k_id: [number, string]
+  k_id: number
   is_multiple: boolean
   is_necessary?: boolean
   v: PropertiesVItem[]

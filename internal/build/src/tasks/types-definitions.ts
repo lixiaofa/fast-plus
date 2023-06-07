@@ -12,7 +12,7 @@ import {
   excludeFiles,
   pkgRoot,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@fast-plus/build-utils'
 import { pathRewriter } from '../utils'
 import type { CompilerOptions, SourceFile } from 'ts-morph'
 

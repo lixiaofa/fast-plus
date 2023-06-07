@@ -10,7 +10,9 @@
       >
         <el-sub-menu index="1">
           <template #title>
-            <el-icon><location /></el-icon>
+            <el-icon>
+              <location />
+            </el-icon>
             <span>Navigator One</span>
           </template>
           <el-menu-item-group title="Group One">
@@ -30,11 +32,15 @@
           <span>Navigator Two</span>
         </el-menu-item>
         <el-menu-item index="3" disabled>
-          <el-icon><document /></el-icon>
+          <el-icon>
+            <document />
+          </el-icon>
           <span>Navigator Three</span>
         </el-menu-item>
         <el-menu-item index="4">
-          <el-icon><setting /></el-icon>
+          <el-icon>
+            <setting />
+          </el-icon>
           <span>Navigator Four</span>
         </el-menu-item>
       </el-menu>
@@ -52,7 +58,9 @@
       >
         <el-sub-menu index="1">
           <template #title>
-            <el-icon><location /></el-icon>
+            <el-icon>
+              <location />
+            </el-icon>
             <span>Navigator One</span>
           </template>
           <el-menu-item-group title="Group One">
@@ -72,11 +80,15 @@
           <span>Navigator Two</span>
         </el-menu-item>
         <el-menu-item index="3" disabled>
-          <el-icon><document /></el-icon>
+          <el-icon>
+            <document />
+          </el-icon>
           <span>Navigator Three</span>
         </el-menu-item>
         <el-menu-item index="4">
-          <el-icon><setting /></el-icon>
+          <el-icon>
+            <setting />
+          </el-icon>
           <span>Navigator Four</span>
         </el-menu-item>
       </el-menu>

@@ -49,6 +49,7 @@ onMounted(() => {
   margin-bottom: 15px;
   width: 350px;
 }
+
 .demo-progress .el-progress--circle {
   margin-right: 15px;
 }

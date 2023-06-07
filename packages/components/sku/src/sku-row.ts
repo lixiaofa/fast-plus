@@ -5,8 +5,8 @@
  * @LastEditTime: 2023-05-21 17:53:04
  * @LastEditors: 司马老贼
  */
-import { buildProps } from '@element-plus/utils'
-// import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps } from '@fast-plus/utils'
+// import { UPDATE_MODEL_EVENT } from '@fast-plus/constants'
 
 import type { ExtractPropTypes, PropType } from 'vue'
 import type { PropertiesItem, SkuItem } from './sku'

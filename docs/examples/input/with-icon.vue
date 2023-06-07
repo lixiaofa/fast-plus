@@ -25,12 +25,16 @@
       >
       <el-input v-model="input3" class="w-50 m-2" placeholder="Pick a date">
         <template #suffix>
-          <el-icon class="el-input__icon"><calendar /></el-icon>
+          <el-icon class="el-input__icon">
+            <calendar />
+          </el-icon>
         </template>
       </el-input>
       <el-input v-model="input4" class="w-50 m-2" placeholder="Type something">
         <template #prefix>
-          <el-icon class="el-input__icon"><search /></el-icon>
+          <el-icon class="el-input__icon">
+            <search />
+          </el-icon>
         </template>
       </el-input>
     </el-row>

@@ -1,6 +1,6 @@
 import consola from 'consola'
-import { REPO_BRANCH, REPO_PATH } from '@element-plus/build-constants'
-import { docsDirName } from '@element-plus/build-utils'
+import { REPO_BRANCH, REPO_PATH } from '@fast-plus/build-constants'
+import { docsDirName } from '@fast-plus/build-utils'
 import { languages } from './utils/lang'
 import { features, head, mdPlugin, nav, sidebars } from './config'
 import type { UserConfig } from 'vitepress'

@@ -1,5 +1,5 @@
 import { computed, inject, ref, unref } from 'vue'
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@fast-plus/utils'
 
 import type { InjectionKey, Ref } from 'vue'
 

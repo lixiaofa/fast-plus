@@ -381,7 +381,7 @@ _2022-11-25_
 
 _2022-11-25_
 
-#### Fix 
+#### Fix
 - Revert "fix(components): [menu] menus that are not in the expanded path do not open" (#10769 by @holazz)
 
 ### 2.2.23
@@ -2386,7 +2386,7 @@ _2021-12-10_
 - Hooks [lockscreen] body lock remove unexpected (#4693 by @KawaiiZapic) (#4694)
 - Docs fix code not working in Codepen (#4678 by @imguolao) (#4679)
 - Components [el-input-number]set value equal to min will update (#4650 by @Alanscut)
-- Docs replace @element-plus/icons with @element-plus/icons-vue (#4704 by @pdsuwwz)
+- Docs replace @fast-plus/icons with @element-plus/icons-vue (#4704 by @pdsuwwz)
 - Docs fix webpack config import syntax (#4718 by @owenvip)
 - Style override el-icon display in el-input__icon (#4684 by @YunYouJun)
 - Components [el-menu] third-party icons are hidden (#4754 by @Alanscut)
@@ -2509,7 +2509,7 @@ _2021-11-05_
 - Components [el-image] initialIndex (#4235 by @Alanscut)
 - Components [el-message] merge the same content messages(#3836 by @zhazhanitian) (#3988)
 - Docs add support for copying svg content (#4169 by @adaex)
-- 
+-
 #### Bug fixes
 
 - Components [el-tree-v2] indent can not set zero (#3881 by @btea)
@@ -2571,7 +2571,7 @@ _2021-10-30_
 - Components [el-message] & [el-notification] appendTo option added (#4012 by @codespikex)
 - Add translation for Bengali language (#3972 by @IbrahimAlKhalil)
 - Dev play add unplugin-vue-components (#3931 by @sxzz)
-- Dev play add @element-plus/icons (#4034 by @xiaoxian521)
+- Dev play add @fast-plus/icons (#4034 by @xiaoxian521)
 
 #### Bug fixes
 

@@ -1,14 +1,11 @@
 <template>
   <el-dropdown>
-    <span
-      class="el-dropdown-link"
-      style="
+    <span class="el-dropdown-link" style="
         cursor: pointer;
         color: var(--el-color-primary);
         display: flex;
         align-items: center;
-      "
-    >
+      ">
       Dropdown List
       <el-icon class="el-icon--right">
         <arrow-down />

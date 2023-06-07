@@ -2,12 +2,12 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-03-02 11:34:52
- * @LastEditTime: 2023-05-31 17:55:28
+ * @LastEditTime: 2023-06-05 18:25:39
  * @LastEditors: 司马老贼
  */
 import { computed, ref, watch } from 'vue'
 import { showToast } from 'vant'
-import { isEmpty } from '@element-plus/utils'
+import { isEmpty } from '@fast-plus/utils'
 import type { SetupContext } from 'vue'
 
 import type {
@@ -23,6 +23,7 @@ import type {
 } from './sku'
 
 import 'vant/es/toast/style'
+
 const TRUE = true
 const FALSE = false
 
@@ -30,7 +31,7 @@ export const useSku = (
   props: SkuProps,
   emit: SetupContext<SkuEmits>['emit']
 ) => {
-  const visible = ref(true)
+  const visible = ref(false)
   const selectedNum = ref(1)
 
   const selectedSkuMap = ref<SelectedSkuMap>({})
@@ -267,10 +268,15 @@ export const useSku = (
     sku: selectedSkuMap.value,
     properties: selectedPropertyMap.value,
   }))
+  const buyOrAddCartEmit = (action: any) =>
+    buyOrAddCartValidate() && emit(action, getSkuData.value)
+  const addCart = () => {
+    buyOrAddCartEmit('addCart')
+  }
 
-  const addCart = () =>
-    buyOrAddCartValidate() && emit('addCart', getSkuData.value)
-  const buy = () => buyOrAddCartValidate() && emit('buy', getSkuData.value)
+  const buy = () => {
+    buyOrAddCartEmit('buy')
+  }
 
   return {
     visible,

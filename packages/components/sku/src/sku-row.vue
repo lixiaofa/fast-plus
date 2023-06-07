@@ -20,13 +20,13 @@
 
 <script lang="ts" setup>
 import { Divider } from 'vant'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@fast-plus/hooks'
 import { skuRowProps } from './sku-row'
 
 import 'vant/es/Divider/style'
 
 defineOptions({
-  name: 'ElSkuRow',
+  name: 'FSSkuRow',
 })
 const ns = useNamespace('sku-row')
 

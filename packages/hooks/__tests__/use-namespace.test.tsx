@@ -1,7 +1,7 @@
 import { computed, defineComponent, nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { provideGlobalConfig } from '@element-plus/components/config-provider'
+import { provideGlobalConfig } from '@fast-plus/components/config-provider'
 import { useNamespace } from '..'
 import type { VueWrapper } from '@vue/test-utils'
 

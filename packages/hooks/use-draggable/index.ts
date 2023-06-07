@@ -1,5 +1,5 @@
 import { onBeforeUnmount, onMounted, watchEffect } from 'vue'
-import { addUnit } from '@element-plus/utils'
+import { addUnit } from '@fast-plus/utils'
 import type { ComputedRef, Ref } from 'vue'
 
 export const useDraggable = (

@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:15
+ * @LastEditTime: 2023-06-03 12:04:37
+ * @LastEditors: 司马老贼
+ */
 import { resolve } from 'path'
 
 export const projRoot = resolve(__dirname, '..', '..', '..')
@@ -7,7 +14,7 @@ export const themeRoot = resolve(pkgRoot, 'theme-chalk')
 export const hookRoot = resolve(pkgRoot, 'hooks')
 export const localeRoot = resolve(pkgRoot, 'locale')
 export const directiveRoot = resolve(pkgRoot, 'directives')
-export const epRoot = resolve(pkgRoot, 'element-plus')
+export const epRoot = resolve(pkgRoot, 'fast-plus')
 export const utilRoot = resolve(pkgRoot, 'utils')
 export const buildRoot = resolve(projRoot, 'internal', 'build')
 
@@ -19,7 +26,7 @@ export const vpRoot = resolve(docRoot, '.vitepress')
 /** `/dist` */
 export const buildOutput = resolve(projRoot, 'dist')
 /** `/dist/element-plus` */
-export const epOutput = resolve(buildOutput, 'element-plus')
+export const epOutput = resolve(buildOutput, 'fast-plus')
 
 export const projPackage = resolve(projRoot, 'package.json')
 export const compPackage = resolve(compRoot, 'package.json')

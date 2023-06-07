@@ -27,13 +27,13 @@
 
 <script lang="ts" setup>
 import { Divider, Image } from 'vant'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@fast-plus/hooks'
 import { skuHeaderEmits, skuHeaderProps } from './sku-header'
 import 'vant/es/Image/style'
 import 'vant/es/Divider/style'
 
 defineOptions({
-  name: 'ElSkuHeader',
+  name: 'FSSkuHeader',
 })
 
 const ns = useNamespace('sku-header')

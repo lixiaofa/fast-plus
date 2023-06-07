@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:15
+ * @LastEditTime: 2023-06-07 19:21:59
+ * @LastEditors: 司马老贼
+ */
 import path from 'path'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import { rollup } from 'rollup'
@@ -13,10 +20,10 @@ import {
   PKG_BRAND_NAME,
   PKG_CAMELCASE_LOCAL_NAME,
   PKG_CAMELCASE_NAME,
-} from '@element-plus/build-constants'
-import { epOutput, epRoot, localeRoot } from '@element-plus/build-utils'
-import { version } from '../../../../packages/element-plus/version'
-import { ElementPlusAlias } from '../plugins/element-plus-alias'
+} from '@fast-plus/build-constants'
+import { epOutput, epRoot, localeRoot } from '@fast-plus/build-utils'
+import { version } from '../../../../packages/fast-plus/version'
+import { FastPlusAlias } from '../plugins/fast-plus-alias'
 import {
   formatBundleFilename,
   generateExternal,
@@ -30,7 +37,7 @@ const banner = `/*! ${PKG_BRAND_NAME} v${version} */\n`
 
 async function buildFullEntry(minify: boolean) {
   const plugins: Plugin[] = [
-    ElementPlusAlias(),
+    FastPlusAlias(),
     VueMacros({
       setupComponent: false,
       setupSFC: false,

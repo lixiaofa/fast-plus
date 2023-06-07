@@ -35,6 +35,7 @@ import { Eleme } from '@element-plus/icons-vue'
   height: 18px;
   animation: loading-rotate 2s linear infinite;
 }
+
 .el-button .custom-loading .circular .path {
   animation: loading-dash 1.5s ease-in-out infinite;
   stroke-dasharray: 90, 150;

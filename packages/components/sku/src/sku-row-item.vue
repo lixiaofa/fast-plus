@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-03-13 18:19:57
- * @LastEditTime: 2023-03-13 18:21:52
+ * @LastEditTime: 2023-06-01 10:52:16
  * @LastEditors: 司马老贼
 -->
 <template>
@@ -12,10 +12,10 @@
 </template>
 
 <script lang="ts" setup>
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@fast-plus/hooks'
 
 defineOptions({
-  name: 'ElSkuRowItem',
+  name: 'FSSkuRowItem',
 })
 const ns = useNamespace('sku-row-item')
 </script>

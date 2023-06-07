@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:17
+ * @LastEditTime: 2023-06-04 17:34:56
+ * @LastEditors: 司马老贼
+ */
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -15,7 +22,7 @@ import {
   getPackageDependencies,
   pkgRoot,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@fast-plus/build-utils'
 import type { Plugin } from 'vite'
 import './vite.init'
 
@@ -33,6 +40,7 @@ const esbuildPlugin = (): Plugin => ({
 export default defineConfig(async ({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   let { dependencies } = getPackageDependencies(epPackage)
+
   dependencies = dependencies.filter((dep) => !dep.startsWith('@types/')) // exclude dts deps
   const optimizeDeps = (
     await glob(['dayjs/(locale|plugin)/*.js'], {
@@ -44,11 +52,11 @@ export default defineConfig(async ({ mode }) => {
     resolve: {
       alias: [
         {
-          find: /^element-plus(\/(es|lib))?$/,
+          find: /^fast-plus(\/(es|lib))?$/,
           replacement: path.resolve(epRoot, 'index.ts'),
         },
         {
-          find: /^element-plus\/(es|lib)\/(.*)$/,
+          find: /^fast-plus\/(es|lib)\/(.*)$/,
           replacement: `${pkgRoot}/$2`,
         },
       ],

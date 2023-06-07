@@ -2,7 +2,7 @@
   <el-tooltip-v2 aria-label="content" placement="left">
     <template #trigger>
       <el-button circle
-        ><el-icon><Plus /></el-icon
+        ><el-icon> <Plus /> </el-icon
       ></el-button>
     </template>
     Basic tooltip

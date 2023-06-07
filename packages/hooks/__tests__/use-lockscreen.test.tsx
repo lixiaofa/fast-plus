@@ -1,7 +1,7 @@
 import { computed, defineComponent, nextTick, onMounted, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { hasClass } from '@element-plus/utils'
+import { hasClass } from '@fast-plus/utils'
 
 import { useLockscreen } from '../use-lockscreen'
 import { useNamespace } from '../use-namespace'

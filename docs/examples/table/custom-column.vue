@@ -3,7 +3,9 @@
     <el-table-column label="Date" width="180">
       <template #default="scope">
         <div style="display: flex; align-items: center">
-          <el-icon><timer /></el-icon>
+          <el-icon>
+            <timer />
+          </el-icon>
           <span style="margin-left: 10px">{{ scope.row.date }}</span>
         </div>
       </template>

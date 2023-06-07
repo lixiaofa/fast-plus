@@ -5,6 +5,6 @@
  * @LastEditTime: 2023-05-28 10:45:30
  * @LastEditors: 司马老贼
  */
-import '@element-plus/components/base/style'
+import '@fast-plus/components/base/style'
 
-import '@element-plus/theme-chalk/src/sku.scss'
+import '@fast-plus/theme-chalk/src/sku.scss'

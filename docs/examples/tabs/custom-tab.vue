@@ -3,7 +3,9 @@
     <el-tab-pane>
       <template #label>
         <span class="custom-tabs-label">
-          <el-icon><calendar /></el-icon>
+          <el-icon>
+            <calendar />
+          </el-icon>
           <span>Route</span>
         </span>
       </template>
@@ -25,9 +27,11 @@ import { Calendar } from '@element-plus/icons-vue'
   font-size: 32px;
   font-weight: 600;
 }
+
 .demo-tabs .custom-tabs-label .el-icon {
   vertical-align: middle;
 }
+
 .demo-tabs .custom-tabs-label span {
   vertical-align: middle;
   margin-left: 4px;

@@ -98,15 +98,18 @@ categories.value.push({ name: 'Other', icons: Array.from(iconMap.values()) })
 .demo-icon {
   &-item {
     margin-top: 24px;
+
     &:first-child {
       margin-top: 0;
     }
   }
+
   &-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
   }
+
   &-list {
     overflow: hidden;
     list-style: none;
@@ -125,11 +128,14 @@ categories.value.push({ name: 'Other', icons: Array.from(iconMap.values()) })
       border-right: 1px solid var(--el-border-color);
       border-bottom: 1px solid var(--el-border-color);
       transition: background-color var(--el-transition-duration);
+
       &:hover {
         background-color: var(--el-border-color-extra-light);
+
         .el-icon {
           color: var(--brand-color-light);
         }
+
         color: var(--brand-color-light);
       }
 

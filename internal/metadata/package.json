@@ -1,5 +1,5 @@
 {
-  "name": "@element-plus/metadata",
+  "name": "@fast-plus/metadata",
   "version": "0.0.1",
   "description": "Metadata for Element Plus",
   "keywords": [
@@ -19,9 +19,9 @@
     "dev": "DEV=1 pnpm run build"
   },
   "devDependencies": {
-    "@element-plus/build": "^0.0.1",
-    "@element-plus/build-constants": "^0.0.1",
-    "@element-plus/build-utils": "^0.0.1",
+    "@fast-plus/build": "^0.0.1",
+    "@fast-plus/build-constants": "^0.0.1",
+    "@fast-plus/build-utils": "^0.0.1",
     "@types/lodash-es": "^4.17.6",
     "chalk": "^5.0.1",
     "consola": "^2.15.3",

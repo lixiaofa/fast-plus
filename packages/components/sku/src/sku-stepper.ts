@@ -5,7 +5,7 @@
  * @LastEditTime: 2023-05-21 17:55:16
  * @LastEditors: 司马老贼
  */
-import { buildProps } from '@element-plus/utils'
+import { buildProps } from '@fast-plus/utils'
 
 import type { ExtractPropTypes } from 'vue'
 

@@ -31,12 +31,14 @@ import { Picture as IconPicture } from '@element-plus/icons-vue'
   box-sizing: border-box;
   vertical-align: top;
 }
+
 .demo-image__error .demonstration {
   display: block;
   color: var(--el-text-color-secondary);
   font-size: 14px;
   margin-bottom: 20px;
 }
+
 .demo-image__error .el-image {
   padding: 0 5px;
   max-width: 300px;
@@ -55,6 +57,7 @@ import { Picture as IconPicture } from '@element-plus/icons-vue'
   color: var(--el-text-color-secondary);
   font-size: 30px;
 }
+
 .demo-image__error .image-slot .el-icon {
   font-size: 30px;
 }

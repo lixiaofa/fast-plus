@@ -73,14 +73,17 @@ onMounted(() => {
   line-height: normal;
   padding: 7px;
 }
+
 .my-autocomplete li .name {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .my-autocomplete li .addr {
   font-size: 12px;
   color: #b4b4b4;
 }
+
 .my-autocomplete li .highlighted .addr {
   color: #ddd;
 }

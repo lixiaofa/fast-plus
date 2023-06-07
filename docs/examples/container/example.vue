@@ -5,7 +5,7 @@
         <el-menu :default-openeds="['1', '3']">
           <el-sub-menu index="1">
             <template #title>
-              <el-icon><message /></el-icon>Navigator One
+              <el-icon> <message /> </el-icon>Navigator One
             </template>
             <el-menu-item-group>
               <template #title>Group 1</template>
@@ -39,7 +39,7 @@
           </el-sub-menu>
           <el-sub-menu index="3">
             <template #title>
-              <el-icon><setting /></el-icon>Navigator Three
+              <el-icon> <setting /> </el-icon>Navigator Three
             </template>
             <el-menu-item-group>
               <template #title>Group 1</template>
@@ -62,9 +62,9 @@
       <el-header style="text-align: right; font-size: 12px">
         <div class="toolbar">
           <el-dropdown>
-            <el-icon style="margin-right: 8px; margin-top: 1px"
-              ><setting
-            /></el-icon>
+            <el-icon style="margin-right: 8px; margin-top: 1px">
+              <setting />
+            </el-icon>
             <template #dropdown>
               <el-dropdown-menu>
                 <el-dropdown-item>View</el-dropdown-item>
@@ -108,16 +108,20 @@ const tableData = ref(Array.from({ length: 20 }).fill(item))
   background-color: var(--el-color-primary-light-7);
   color: var(--el-text-color-primary);
 }
+
 .layout-container-demo .el-aside {
   color: var(--el-text-color-primary);
   background: var(--el-color-primary-light-8);
 }
+
 .layout-container-demo .el-menu {
   border-right: none;
 }
+
 .layout-container-demo .el-main {
   padding: 0;
 }
+
 .layout-container-demo .toolbar {
   display: inline-flex;
   align-items: center;

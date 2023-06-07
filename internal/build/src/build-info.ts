@@ -1,6 +1,6 @@
 import path from 'path'
-import { PKG_NAME } from '@element-plus/build-constants'
-import { epOutput } from '@element-plus/build-utils'
+import { PKG_NAME } from '@fast-plus/build-constants'
+import { epOutput } from '@fast-plus/build-utils'
 
 import type { ModuleFormat } from 'rollup'
 

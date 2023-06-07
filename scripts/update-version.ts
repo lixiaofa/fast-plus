@@ -1,6 +1,13 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:17
+ * @LastEditTime: 2023-06-03 11:49:09
+ * @LastEditors: 司马老贼
+ */
 import consola from 'consola'
 import chalk from 'chalk'
-import { errorAndExit, getWorkspacePackages } from '@element-plus/build-utils'
+import { errorAndExit, getWorkspacePackages } from '@fast-plus/build-utils'
 import type { Project } from '@pnpm/find-workspace-packages'
 
 async function main() {
@@ -18,14 +25,14 @@ async function main() {
   consola.log(chalk.cyan(`$TAG_VERSION: ${tagVersion}`))
   consola.log(chalk.cyan(`$GIT_HEAD: ${gitHead}`))
 
-  consola.debug(chalk.yellow(`Updating package.json for element-plus`))
+  consola.debug(chalk.yellow(`Updating package.json for fast-plus`))
 
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const elementPlus = pkgs['element-plus'] || pkgs['@element-plus/nightly']
-  const eslintConfig = pkgs['@element-plus/eslint-config']
-  const metadata = pkgs['@element-plus/metadata']
+  const elementPlus = pkgs['fast-plus'] || pkgs['@fast-plus/nightly']
+  const eslintConfig = pkgs['@fast-plus/eslint-config']
+  const metadata = pkgs['@fast-plus/metadata']
 
   const writeVersion = async (project: Project) => {
     await project.writeProjectManifest({

@@ -87,6 +87,7 @@ const { hasLinks, prev, next } = usePageNav()
 .icon-prev {
   margin-right: 8px;
 }
+
 .icon-next {
   margin-left: 8px;
 }

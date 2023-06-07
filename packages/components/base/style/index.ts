@@ -1,1 +1,1 @@
-import '@element-plus/theme-chalk/src/base.scss'
+import '@fast-plus/theme-chalk/src/base.scss'
