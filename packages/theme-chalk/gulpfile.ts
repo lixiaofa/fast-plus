@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:16
+ * @LastEditTime: 2023-06-07 21:55:27
+ * @LastEditors: 司马老贼
+ */
 import path from 'path'
 import chalk from 'chalk'
 import { dest, parallel, series, src } from 'gulp'
@@ -35,7 +42,7 @@ function buildThemeChalk() {
     .pipe(
       rename((path) => {
         if (!noElPrefixFile.test(path.basename)) {
-          path.basename = `el-${path.basename}`
+          path.basename = `fs-${path.basename}`
         }
       })
     )

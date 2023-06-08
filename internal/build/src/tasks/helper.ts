@@ -32,7 +32,7 @@ const removeTag = (str: string) => {
 }
 
 const reComponentName: ReComponentName = (title) => {
-  return `el-${hyphenate(removeTag(title)).replace(/[ ]+/g, '-')}`
+  return `fs-${hyphenate(removeTag(title)).replace(/[ ]+/g, '-')}`
 }
 
 const reDocUrl: ReDocUrl = (fileName, header) => {
@@ -94,8 +94,8 @@ const reAttribute: ReAttribute = (value, key) => {
       : str.replaceAll(/`/g, '').replaceAll(/\([^)]*\)(?!\s*=>)/g, '')
   } else if (key === 'Subtags') {
     return str
-      ? `el-${str
-          .replaceAll(/\s*\/\s*/g, '/el-')
+      ? `fs-${str
+          .replaceAll(/\s*\/\s*/g, '/fs-')
           .replaceAll(/\B([A-Z])/g, '-$1')
           .replaceAll(/\s+/g, '-')
           .toLowerCase()}`
