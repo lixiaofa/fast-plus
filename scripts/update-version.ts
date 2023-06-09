@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-05-31 12:07:17
- * @LastEditTime: 2023-06-03 11:49:09
+ * @LastEditTime: 2023-06-09 11:39:59
  * @LastEditors: 司马老贼
  */
 import consola from 'consola'
@@ -12,7 +12,9 @@ import type { Project } from '@pnpm/find-workspace-packages'
 
 async function main() {
   const tagVersion = process.env.TAG_VERSION
+
   const gitHead = process.env.GIT_HEAD
+
   if (!tagVersion || !gitHead) {
     errorAndExit(
       new Error(
@@ -30,7 +32,7 @@ async function main() {
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const elementPlus = pkgs['fast-plus'] || pkgs['@fast-plus/nightly']
+  const fastPlus = pkgs['fast-plus'] || pkgs['@fast-plus/nightly']
   const eslintConfig = pkgs['@fast-plus/eslint-config']
   const metadata = pkgs['@fast-plus/metadata']
 
@@ -43,7 +45,7 @@ async function main() {
   }
 
   try {
-    await writeVersion(elementPlus)
+    await writeVersion(fastPlus)
     await writeVersion(eslintConfig)
     await writeVersion(metadata)
   } catch (err: any) {
