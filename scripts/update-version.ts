@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-05-31 12:07:17
- * @LastEditTime: 2023-06-09 20:30:40
+ * @LastEditTime: 2023-06-11 21:46:35
  * @LastEditors: 司马老贼
  */
 import consola from 'consola'
@@ -14,7 +14,7 @@ async function main() {
   const tagVersion = process.env.TAG_VERSION
 
   const gitHead = process.env.GIT_HEAD
-  console.log('process.env.TAG_VERSION', process.env.TAG_VERSION)
+  console.log('process.env.TAG_VERSION', process.env)
   console.log('process.env.GIT_HEAD', process.env.GIT_HEAD)
 
   if (!tagVersion || !gitHead) {
