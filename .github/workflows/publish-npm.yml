@@ -41,7 +41,7 @@ jobs:
         run: pnpm i
 
       - name: Lint
-        run: pnpm lint
+        run: pnpm lint --parser typescript
 
       - name: Test
         run: pnpm test
