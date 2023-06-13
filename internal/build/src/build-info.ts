@@ -5,6 +5,7 @@ import { epOutput } from '@fast-plus/build-utils'
 import type { ModuleFormat } from 'rollup'
 
 export const modules = ['esm', 'cjs'] as const
+// prettier-ignore
 export type Module = typeof modules[number]
 export interface BuildInfo {
   module: 'ESNext' | 'CommonJS'

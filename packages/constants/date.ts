@@ -19,5 +19,5 @@ export const WEEK_DAYS = [
   'fri',
   'sat',
 ] as const
-
+// prettier-ignore
 export type DatePickType = typeof datePickTypes[number]
