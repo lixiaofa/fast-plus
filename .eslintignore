@@ -1,12 +1,13 @@
-node_modules
+node*modules
 dist
+docs
 pnpm-lock.yaml
 CHANGELOG.en-US.md
 docs/components.d.ts
 coverage
 play
 ssr-testing/cases/*
-docs/.vitepress/i18n/*
-docs/.vitepress/crowdin/*
+docs/.vitepress/i18n/_
+docs/.vitepress/crowdin/_
 !docs/.vitepress/crowdin/en-US
-!.*
+!.\_
