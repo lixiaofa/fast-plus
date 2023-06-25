@@ -1,11 +1,3 @@
-/*
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-05-31 16:21:45
- * @LastEditTime: 2023-06-25 11:17:51
- * @LastEditors: 司马老贼
- */
-
 import { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
@@ -24,32 +16,15 @@ describe('Sku.vue', () => {
     document.body.innerHTML = ''
   })
   it('render test', async () => {
-    const wrapper = mount(
-      () => (
-        <Sku goodsId={'1'} modelValue={true} addCart={'addCart'} buy={'buy'} />
-      ),
-      {
-        global: {
-          stubs: ['Popup'],
-        },
-      }
-    )
+    const wrapper = mount(() => <Sku goodsId={'1'} modelValue={true} />, {
+      global: {
+        stubs: ['Popup'],
+      },
+    })
 
     await nextTick()
+    console.log(wrapper.html())
 
     expect(wrapper.classes()).contain('fs-sku')
   })
-  // it('emitted test', async () => {
-  //   const wrapper = mount(() => (
-  //     <Sku goodsId={'1'} modelValue={true} addCart={'addCart'} buy={'buy'} />
-  //   ))
-
-  //   const constance = wrapper.getComponent(Sku)
-  //   await nextTick()
-  //   console.log('constanceconstance', constance.emitted())
-  //   // expect(popupTeleport.emitted()).toHaveProperty('addCart')
-  //   // expect(popupTeleport.emitted().addCart).toHaveLength(1)
-  //   // expect(popupTeleport.emitted()).toHaveProperty('buy')
-  //   // expect(popupTeleport.emitted().buy).toHaveLength(1)
-  // })
 })

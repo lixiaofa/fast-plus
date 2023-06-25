@@ -22,5 +22,8 @@ export default defineConfig({
     include: ['**/*.puppeteer.{ts,tsx}'],
     testTimeout: 30_000,
     hookTimeout: 30_000,
+    deps: {
+      inline: ['vant'],
+    },
   },
 })
