@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-03-02 11:34:52
- * @LastEditTime: 2023-06-05 18:25:39
+ * @LastEditTime: 2023-06-16 18:41:55
  * @LastEditors: 司马老贼
  */
 import { computed, ref, watch } from 'vue'
@@ -46,7 +46,7 @@ export const useSku = (
   )
   const getImages = (sku: SkuData) => {
     const images: string[] = []
-    sku.tree.forEach((treeItem) => {
+    sku.tree?.forEach((treeItem) => {
       if (!treeItem.v) return
 
       treeItem.v.forEach((vItem) => {
@@ -142,7 +142,7 @@ export const useSku = (
   })
 
   const selectedSku = (selectedPreItem: SkuItem, selectedItem: VItem) => {
-    props.sku.tree.forEach((item) => {
+    props.sku.tree?.forEach((item) => {
       if (item.v.includes(selectedItem)) {
         item.v.forEach((vitem) => {
           if (selectedItem !== vitem) vitem.active = FALSE
@@ -162,7 +162,7 @@ export const useSku = (
       (item) => item[selectedPreItem.k_s] === selectedItem.id
     )
     //筛选出没有被选的sku
-    const noSelectedSku = props.sku.tree.filter(
+    const noSelectedSku = props.sku.tree?.filter(
       (item) => item.k_s !== selectedPreItem.k_s
     )
     noSelectedSku.forEach((item) => {
@@ -193,7 +193,7 @@ export const useSku = (
   }
   const resetSelected = () => {
     emit('update:modelValue', false)
-    props.sku.tree.forEach((item) => {
+    props.sku.tree?.forEach((item) => {
       selectedSkuMap.value[item.k_s] = null
       item.v.forEach((vitem) => {
         vitem.active = FALSE

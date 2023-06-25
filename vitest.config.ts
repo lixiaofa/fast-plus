@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-05-31 12:07:17
- * @LastEditTime: 2023-06-16 16:45:29
+ * @LastEditTime: 2023-06-16 18:53:40
  * @LastEditors: 司马老贼
  */
 import { defineConfig } from 'vitest/config'
@@ -24,9 +24,6 @@ export default defineConfig({
   optimizeDeps: {
     disabled: true,
   },
-  deps: {
-    inline: ['vant'],
-  },
 
   test: {
     clearMocks: true,
@@ -34,6 +31,10 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.ts'],
     transformMode: {
       web: [/\.[jt]sx$/],
+    },
+
+    deps: {
+      inline: ['vant'],
     },
   },
 })

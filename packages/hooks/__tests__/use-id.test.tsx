@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:16
+ * @LastEditTime: 2023-06-16 18:14:30
+ * @LastEditors: 司马老贼
+ */
 import { config, mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { ID_INJECTION_KEY, useId, useIdInjection } from '../use-id'
@@ -28,7 +35,7 @@ describe('no injection value', () => {
       },
     })
 
-    expect(wrapper.vm.id).toMatch(/^el-id-\d{0,4}-\d+$/)
+    expect(wrapper.vm.id).toMatch(/^fs-id-\d{0,4}-\d+$/)
   })
 })
 
@@ -67,6 +74,6 @@ describe('with injection value', () => {
       },
     })
 
-    expect(wrapper.vm.id).toBe('el-id-1024-0')
+    expect(wrapper.vm.id).toBe('fs-id-1024-0')
   })
 })

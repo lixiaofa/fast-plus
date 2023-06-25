@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:16
+ * @LastEditTime: 2023-06-16 18:27:56
+ * @LastEditors: 司马老贼
+ */
 import { computed, defineComponent, nextTick, onMounted, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
@@ -6,7 +13,7 @@ import { hasClass } from '@fast-plus/utils'
 import { useLockscreen } from '../use-lockscreen'
 import { useNamespace } from '../use-namespace'
 
-const kls = 'el-popup-parent--hidden'
+const kls = 'fs-popup-parent--hidden'
 
 const Comp = defineComponent({
   setup() {

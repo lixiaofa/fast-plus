@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: 司马老贼
+ * @Date: 2023-05-31 12:07:16
+ * @LastEditTime: 2023-06-16 18:29:34
+ * @LastEditors: 司马老贼
+ */
 import { defineComponent, nextTick } from 'vue'
 import { config, mount, shallowMount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
@@ -61,8 +68,8 @@ describe('no injection value', () => {
       },
     })
 
-    expect(wrapper.vm.id).toMatch(/^el-popper-container-\d{0,4}$/)
-    expect(wrapper.vm.selector).toMatch(/^#el-popper-container-\d{0,4}$/)
+    expect(wrapper.vm.id).toMatch(/^fs-popper-container-\d{0,4}$/)
+    expect(wrapper.vm.selector).toMatch(/^#fs-popper-container-\d{0,4}$/)
     expect(wrapper.vm.selector).toBe(`#${wrapper.vm.id}`)
   })
 })
@@ -90,7 +97,7 @@ describe('with injection value', () => {
       },
     })
 
-    expect(wrapper.vm.id).toBe('el-popper-container-1024')
-    expect(wrapper.vm.selector).toBe('#el-popper-container-1024')
+    expect(wrapper.vm.id).toBe('fs-popper-container-1024')
+    expect(wrapper.vm.selector).toBe('#fs-popper-container-1024')
   })
 })
