@@ -5,9 +5,10 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { cAF, rAF } from '..'
 vi.mock('@vueuse/core', () => ({
   get isClient() {
-    return false
+    return isClientMocked
   },
 }))
+
 describe('raf', () => {
   beforeEach(() => {
     vi.useFakeTimers()

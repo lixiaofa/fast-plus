@@ -2,7 +2,7 @@
  * @Description:
  * @Author: 司马老贼
  * @Date: 2023-05-31 16:21:45
- * @LastEditTime: 2023-06-25 09:10:39
+ * @LastEditTime: 2023-06-25 11:17:51
  * @LastEditors: 司马老贼
  */
 
@@ -11,8 +11,6 @@ import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 
 import Sku from '../src/sku.vue'
-
-const AXIOM = 'Rem is the best girl'
 
 describe('Sku.vue', () => {
   beforeEach(() => {

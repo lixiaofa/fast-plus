@@ -1,4 +1,4 @@
-import { defineComponent, nextTick, reactive, ref } from 'vue'
+import { defineComponent, nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { useLocale } from '@fast-plus/hooks'
