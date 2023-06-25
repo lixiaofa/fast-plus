@@ -3,7 +3,7 @@ let isClientMocked = false
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { cAF, rAF } from '..'
-vi.mock('@vueuse/core', () => ({
+vi.doMock('@vueuse/core', () => ({
   get isClient() {
     return isClientMocked
   },
