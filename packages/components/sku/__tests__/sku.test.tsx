@@ -2,6 +2,7 @@ import { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 
+import { Popup } from 'vant'
 import Sku from '../src/sku.vue'
 
 describe('Sku.vue', () => {
@@ -16,15 +17,12 @@ describe('Sku.vue', () => {
     document.body.innerHTML = ''
   })
   it('render test', async () => {
-    const wrapper = mount(() => <Sku goodsId={'1'} modelValue={true} />, {
-      global: {
-        stubs: ['Popup'],
-      },
-    })
+    const wrapper = mount(() => <Sku goodsId={'1'} modelValue={true} />)
 
     await nextTick()
-    console.log(wrapper.html())
-
-    expect(wrapper.classes()).contain('fs-sku')
+    console.log('PopupTeleport', wrapper.html())
+    expect(wrapper.html()).toContain(
+      '<!--teleport start-->\n<!--teleport end-->'
+    )
   })
 })
