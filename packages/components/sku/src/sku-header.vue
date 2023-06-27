@@ -29,8 +29,8 @@
 import { Divider, Image } from 'vant'
 import { useNamespace } from '@fast-plus/hooks'
 import { skuHeaderEmits, skuHeaderProps } from './sku-header'
-import 'vant/es/Image/style'
-import 'vant/es/Divider/style'
+import 'vant/es/image/style'
+import 'vant/es/divider/style'
 
 defineOptions({
   name: 'FSSkuHeader',

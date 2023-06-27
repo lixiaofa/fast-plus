@@ -23,7 +23,7 @@ import { Divider } from 'vant'
 import { useNamespace } from '@fast-plus/hooks'
 import { skuRowProps } from './sku-row'
 
-import 'vant/es/Divider/style'
+import 'vant/es/divider/style'
 
 defineOptions({
   name: 'FSSkuRow',
