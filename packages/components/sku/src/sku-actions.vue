@@ -1,10 +1,3 @@
-<!--
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-05-31 16:21:45
- * @LastEditTime: 2023-06-01 10:52:53
- * @LastEditors: 司马老贼
--->
 <template>
   <div :class="ns.b()">
     <ActionBar>

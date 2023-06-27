@@ -1,11 +1,3 @@
-<!--
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-02-22 19:10:47
- * @LastEditTime: 2023-06-19 13:00:28
- * @LastEditors: 司马老贼
--->
-
 <template>
   <Popup
     v-model:show="visible"
