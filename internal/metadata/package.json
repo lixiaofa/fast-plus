@@ -1,9 +1,9 @@
 {
   "name": "@fast-plus/metadata",
   "version": "0.0.1",
-  "description": "Metadata for Element Plus",
+  "description": "Metadata for Fast Plus",
   "keywords": [
-    "element-plus"
+    "fast-plus"
   ],
   "license": "MIT",
   "files": [
