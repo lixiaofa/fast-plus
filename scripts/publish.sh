@@ -2,12 +2,12 @@
 
 set -e
 
-pnpm i --frozen-lockfile
+pnpm i --prefer-frozen-lockfile
 pnpm update:version
 
 pnpm build
 
-cd dist/element-plus
+cd dist/fast-plus
 npm publish
 cd -
 
