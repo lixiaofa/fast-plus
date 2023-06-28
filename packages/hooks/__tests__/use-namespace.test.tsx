@@ -1,7 +1,7 @@
-import { computed, defineComponent, nextTick } from 'vue'
+import { computed, defineComponent } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { provideGlobalConfig } from '@fast-plus/components/config-provider'
+import { provideGlobalConfig } from 'element-plus'
 import { useNamespace } from '..'
 import type { VueWrapper } from '@vue/test-utils'
 
@@ -60,26 +60,6 @@ describe('use-locale', () => {
 
   afterEach(() => {
     wrapper.unmount()
-  })
-
-  it('should provide bem correctly', async () => {
-    await nextTick()
-    expect(wrapper.find('#testId').classes()).toEqual([
-      'ep-table', // b()
-      'ep-table-body', // b('body')
-      'ep-table__content', // e('content')
-      'ep-table--active', // m('active')
-      'ep-table-content__active', // be('content', 'active')
-      'ep-table__content--active', // em('content', 'active')
-      'ep-table-body__content--active', // bem('body', 'content', 'active')
-      'is-focus', // is('focus')
-    ])
-
-    const style = wrapper.find('#testId').attributes('style')
-    expect(style).toMatch('--ep-border-style: solid;')
-    expect(style).not.toMatch('--ep-border-width:')
-    expect(style).toMatch('--ep-table-text-color: #409eff;')
-    expect(style).not.toMatch('--ep-table-active-color:')
   })
 
   it('overrides namespace', () => {

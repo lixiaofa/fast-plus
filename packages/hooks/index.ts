@@ -2,7 +2,7 @@ export * from './use-attrs'
 export * from './use-deprecated'
 export * from './use-draggable'
 export * from './use-focus'
-export * from './use-locale'
+
 export * from './use-lockscreen'
 export * from './use-modal'
 export * from './use-model-toggle'
