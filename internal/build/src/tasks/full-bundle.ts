@@ -93,6 +93,7 @@ async function buildFullEntry(minify: boolean) {
       name: PKG_CAMELCASE_NAME,
       globals: {
         vue: 'Vue',
+        vant: 'Vant',
       },
       sourcemap: minify,
       banner,
