@@ -17,7 +17,7 @@ export const run = async (command: string, cwd: string = projRoot) =>
 
     app.on('close', (code) => {
       process.removeListener('exit', onProcessExit)
-
+      consola.log('code', code)
       if (code === 0) resolve()
       else
         reject(

@@ -1,10 +1,3 @@
-/*
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-05-31 12:07:17
- * @LastEditTime: 2023-06-13 10:01:22
- * @LastEditors: 司马老贼
- */
 import consola from 'consola'
 import chalk from 'chalk'
 import { errorAndExit, getWorkspacePackages } from '@fast-plus/build-utils'
