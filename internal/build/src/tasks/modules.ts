@@ -1,10 +1,3 @@
-/*
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-05-31 12:07:15
- * @LastEditTime: 2023-06-07 19:23:03
- * @LastEditors: 司马老贼
- */
 import { rollup } from 'rollup'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -53,6 +46,7 @@ export const buildModules = async () => {
         loaders: {
           '.vue': 'ts',
         },
+        keepNames: false,
       }),
     ],
     external: await generateExternal({ full: false }),
