@@ -12,7 +12,7 @@
     "stub": "unbuild --stub"
   },
   "peerDependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.37"
   },
   "dependencies": {
     "@fast-plus/build-constants": "^0.0.1",
