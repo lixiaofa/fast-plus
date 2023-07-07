@@ -41,7 +41,7 @@
     "postinstall": "pnpm stub && concurrently \"pnpm gen:version\" \"pnpm run -C internal/metadata dev\""
   },
   "peerDependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.47"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.6",
@@ -117,7 +117,7 @@
     "unplugin-element-plus": "^0.4.0",
     "unplugin-vue-macros": "^0.11.2",
     "vitest": "^0.32.2",
-    "vue": "^3.2.37",
+    "vue": "^3.2.47",
     "vue-router": "^4.0.16",
     "vue-tsc": "^0.38.9"
   },

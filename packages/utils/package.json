@@ -4,6 +4,9 @@
   "license": "MIT",
   "main": "index.ts",
   "peerDependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
   }
 }
