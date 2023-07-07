@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-
+node -v
 pnpm i --prefer-frozen-lockfile
 pnpm update:version
 
