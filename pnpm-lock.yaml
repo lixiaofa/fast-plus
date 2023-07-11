@@ -5823,7 +5823,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: registry.npmmirror.com/browserslist@4.21.9
-      caniuse-lite: registry.npmmirror.com/caniuse-lite@1.0.30001514
+      caniuse-lite: registry.npmmirror.com/caniuse-lite@1.0.30001515
       fraction.js: registry.npmmirror.com/fraction.js@4.2.0
       normalize-range: registry.npmmirror.com/normalize-range@0.1.2
       picocolors: registry.npmmirror.com/picocolors@1.0.0
@@ -6111,7 +6111,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: registry.npmmirror.com/caniuse-lite@1.0.30001514
+      caniuse-lite: registry.npmmirror.com/caniuse-lite@1.0.30001515
       electron-to-chromium: registry.npmmirror.com/electron-to-chromium@1.4.455
       node-releases: registry.npmmirror.com/node-releases@2.0.13
       update-browserslist-db: registry.npmmirror.com/update-browserslist-db@1.0.11(browserslist@4.21.9)
@@ -6268,10 +6268,10 @@ packages:
     dependencies:
       path-temp: registry.npmmirror.com/path-temp@2.0.0
 
-  registry.npmmirror.com/caniuse-lite@1.0.30001514:
-    resolution: {integrity: sha512-ENcIpYBmwAAOm/V2cXgM7rZUrKKaqisZl4ZAI520FIkqGXUxJjmaIssbRW5HVVR5tyV6ygTLIm15aU8LUmQSaQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001514.tgz}
+  registry.npmmirror.com/caniuse-lite@1.0.30001515:
+    resolution: {integrity: sha512-eEFDwUOZbE24sb+Ecsx3+OvNETqjWIdabMy52oOkIgcUtAsQifjUG9q4U9dgTHJM2mfk4uEPxc0+xuFdJ629QA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001515.tgz}
     name: caniuse-lite
-    version: 1.0.30001514
+    version: 1.0.30001515
 
   registry.npmmirror.com/caseless@0.12.0:
     resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caseless/-/caseless-0.12.0.tgz}
