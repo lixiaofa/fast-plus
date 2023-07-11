@@ -1,10 +1,3 @@
-/*
- * @Description:
- * @Author: 司马老贼
- * @Date: 2023-05-31 12:07:15
- * @LastEditTime: 2023-06-03 12:04:37
- * @LastEditors: 司马老贼
- */
 import { resolve } from 'path'
 
 export const projRoot = resolve(__dirname, '..', '..', '..')
