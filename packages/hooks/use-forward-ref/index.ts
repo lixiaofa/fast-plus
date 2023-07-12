@@ -26,13 +26,13 @@ export const useForwardRefDirective = (
 ): ObjectDirective => {
   return {
     mounted(el) {
-      setForwardRef<HTMLElement>(el)
+      setForwardRef(el)
     },
     updated(el) {
-      setForwardRef<HTMLElement>(el)
+      setForwardRef(el)
     },
     unmounted() {
-      setForwardRef<null>(null)
+      setForwardRef(null)
     },
   }
 }
