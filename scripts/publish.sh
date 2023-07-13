@@ -2,7 +2,7 @@
 
 set -e
 
-npm i
+pnpm i
 pnpm update:version
 
 pnpm build
