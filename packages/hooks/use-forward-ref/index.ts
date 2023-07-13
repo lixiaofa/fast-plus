@@ -12,7 +12,7 @@ export const FORWARD_REF_INJECTION_KEY: InjectionKey<ForwardRefInjectionContext>
   Symbol('fsForwardRef')
 
 export const useForwardRef = <T>(forwardRef: Ref<T | null>) => {
-  const setForwardRef = (el: T) => {
+  const setForwardRef = <U extends T>(el: U) => {
     forwardRef.value = el
   }
 
