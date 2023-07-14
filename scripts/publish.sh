@@ -5,7 +5,7 @@ set -e
 pnpm i
 pnpm update:version
 
-pnpm build
+pnpm build --sort-package-json
 
 cd dist/fast-plus
 npm publish
