@@ -49,7 +49,6 @@ export const buildModules = async () => {
         loaders: {
           '.vue': 'ts',
         },
-        keepNames: false,
       }),
     ],
     external: await generateExternal({ full: false }),

@@ -64,7 +64,6 @@ async function buildFullEntry(minify: boolean) {
       },
       treeShaking: true,
       legalComments: 'eof',
-      keepNames: false,
     }),
   ]
   if (minify) {
@@ -129,7 +128,6 @@ async function buildFullLocale(minify: boolean) {
             minify,
             sourceMap: minify,
             target,
-            keepNames: false,
           }),
         ],
       })

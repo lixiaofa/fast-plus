@@ -6,6 +6,7 @@ pnpm i
 pnpm update:version
 
 pnpm build
+pnpm dedupe
 
 cd dist/fast-plus
 npm publish
