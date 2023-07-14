@@ -232,7 +232,7 @@ importers:
     dependencies:
       '@docsearch/js':
         specifier: ^3.1.0
-        version: registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.14)
+        version: registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.15)
       '@element-plus/icons-vue':
         specifier: ^2.0.9
         version: registry.npmmirror.com/@element-plus/icons-vue@2.0.9(vue@3.2.47)
@@ -275,7 +275,7 @@ importers:
         version: registry.npmmirror.com/@crowdin/cli@3.7.8
       '@docsearch/react':
         specifier: ^3.1.0
-        version: registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.14)
+        version: registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.15)
       '@fast-plus/build':
         specifier: workspace:*
         version: link:../internal/build
@@ -341,7 +341,7 @@ importers:
         version: registry.npmmirror.com/vite-plugin-pwa@0.12.0(vite@4.3.9)(workbox-build@6.6.0)(workbox-window@6.6.0)
       vitepress:
         specifier: ^0.22.4
-        version: registry.npmmirror.com/vitepress@0.22.4(@types/react@18.2.14)(sass@1.53.0)
+        version: registry.npmmirror.com/vitepress@0.22.4(@types/react@18.2.15)(sass@1.53.0)
 
   internal/build:
     dependencies:
@@ -404,7 +404,7 @@ importers:
         version: registry.npmmirror.com/unplugin-vue-macros@0.11.2(esbuild@0.18.11)(rollup@2.75.7)(vue@3.2.47)
     devDependencies:
       '@esbuild-kit/cjs-loader':
-        specifier: ^2.2.1
+        specifier: ^2.4.2
         version: registry.npmmirror.com/@esbuild-kit/cjs-loader@2.4.2
       '@pnpm/types':
         specifier: ^8.4.0
@@ -2581,20 +2581,20 @@ packages:
     version: 3.5.1
     dev: true
 
-  registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.14):
+  registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.15):
     resolution: {integrity: sha512-5XSK+xbP0hcTIp54MECqxkWLs6kf7Ug4nWdxWNtx8cUpLiFNFnKXDxCb35wnyNpjukmrx7Q9DkO5tFFsmNVxng==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/js/-/js-3.1.0.tgz}
     id: registry.npmmirror.com/@docsearch/js/3.1.0
     name: '@docsearch/js'
     version: 3.1.0
     dependencies:
-      '@docsearch/react': registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.14)
+      '@docsearch/react': registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.15)
       preact: registry.npmmirror.com/preact@10.16.0
     transitivePeerDependencies:
       - '@types/react'
       - react
       - react-dom
 
-  registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.14):
+  registry.npmmirror.com/@docsearch/react@3.1.0(@types/react@18.2.15):
     resolution: {integrity: sha512-bjB6ExnZzf++5B7Tfoi6UXgNwoUnNOfZ1NyvnvPhWgCMy5V/biAtLL4o7owmZSYdAKeFSvZ5Lxm0is4su/dBWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/react/-/react-3.1.0.tgz}
     id: registry.npmmirror.com/@docsearch/react/3.1.0
     name: '@docsearch/react'
@@ -2611,7 +2611,7 @@ packages:
     dependencies:
       '@algolia/autocomplete-core': registry.npmmirror.com/@algolia/autocomplete-core@1.6.3
       '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.1.0
-      '@types/react': registry.npmmirror.com/@types/react@18.2.14
+      '@types/react': registry.npmmirror.com/@types/react@18.2.15
       algoliasearch: registry.npmmirror.com/algoliasearch@4.18.0
 
   registry.npmmirror.com/@element-plus/icons-vue@2.0.9(vue@3.2.47):
@@ -4525,10 +4525,10 @@ packages:
     name: '@types/prop-types'
     version: 15.7.5
 
-  registry.npmmirror.com/@types/react@18.2.14:
-    resolution: {integrity: sha512-A0zjq+QN/O0Kpe30hA1GidzyFjatVvrpIvWLxD+xv67Vt91TWWgco9IvrJBkeyHm1trGaFS/FSGqPlhyeZRm0g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.2.14.tgz}
+  registry.npmmirror.com/@types/react@18.2.15:
+    resolution: {integrity: sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.2.15.tgz}
     name: '@types/react'
-    version: 18.2.14
+    version: 18.2.15
     dependencies:
       '@types/prop-types': registry.npmmirror.com/@types/prop-types@15.7.5
       '@types/scheduler': registry.npmmirror.com/@types/scheduler@0.16.3
@@ -5251,7 +5251,7 @@ packages:
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.2.47
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
       magic-string: registry.npmmirror.com/magic-string@0.25.9
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       source-map: registry.npmmirror.com/source-map@0.6.1
 
   registry.npmmirror.com/@vue/compiler-sfc@3.3.4:
@@ -5267,7 +5267,7 @@ packages:
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
       estree-walker: registry.npmmirror.com/estree-walker@2.0.2
       magic-string: registry.npmmirror.com/magic-string@0.30.1
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
 
   registry.npmmirror.com/@vue/compiler-ssr@3.2.47:
@@ -6002,7 +6002,7 @@ packages:
     hasBin: true
     dev: false
 
-  registry.npmmirror.com/autoprefixer@10.4.14(postcss@8.4.25):
+  registry.npmmirror.com/autoprefixer@10.4.14(postcss@8.4.26):
     resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/autoprefixer/-/autoprefixer-10.4.14.tgz}
     id: registry.npmmirror.com/autoprefixer/10.4.14
     name: autoprefixer
@@ -6017,7 +6017,7 @@ packages:
       fraction.js: registry.npmmirror.com/fraction.js@4.2.0
       normalize-range: registry.npmmirror.com/normalize-range@0.1.2
       picocolors: registry.npmmirror.com/picocolors@1.0.0
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       postcss-value-parser: registry.npmmirror.com/postcss-value-parser@4.2.0
     dev: true
 
@@ -6302,7 +6302,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: registry.npmmirror.com/caniuse-lite@1.0.30001515
-      electron-to-chromium: registry.npmmirror.com/electron-to-chromium@1.4.459
+      electron-to-chromium: registry.npmmirror.com/electron-to-chromium@1.4.460
       node-releases: registry.npmmirror.com/node-releases@2.0.13
       update-browserslist-db: registry.npmmirror.com/update-browserslist-db@1.0.11(browserslist@4.21.9)
 
@@ -7536,10 +7536,10 @@ packages:
       jake: registry.npmmirror.com/jake@10.8.7
     dev: true
 
-  registry.npmmirror.com/electron-to-chromium@1.4.459:
-    resolution: {integrity: sha512-XXRS5NFv8nCrBL74Rm3qhJjA2VCsRFx0OjHKBMPI0otij56aun8UWiKTDABmd5/7GTR021pA4wivs+Ri6XCElg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.459.tgz}
+  registry.npmmirror.com/electron-to-chromium@1.4.460:
+    resolution: {integrity: sha512-kKiHnbrHME7z8E6AYaw0ehyxY5+hdaRmeUbjBO22LZMdqTYCO29EvF0T1cQ3pJ1RN5fyMcHl1Lmcsdt9WWJpJQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.460.tgz}
     name: electron-to-chromium
-    version: 1.4.459
+    version: 1.4.460
 
   registry.npmmirror.com/element-plus@2.3.7(vue@3.2.47):
     resolution: {integrity: sha512-h6TxclbaLUJxg/Bv5j/ZKsK+K5yadQliw5+R30HWyE69pXlqXTX24oYx+yw3pA4Dy+lqEDi5501FQ0CORk3OSA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/element-plus/-/element-plus-2.3.7.tgz}
@@ -9546,10 +9546,10 @@ packages:
       gulp:
         optional: true
     dependencies:
-      autoprefixer: registry.npmmirror.com/autoprefixer@10.4.14(postcss@8.4.25)
+      autoprefixer: registry.npmmirror.com/autoprefixer@10.4.14(postcss@8.4.26)
       fancy-log: registry.npmmirror.com/fancy-log@1.3.3
       plugin-error: registry.npmmirror.com/plugin-error@1.0.1
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       through2: registry.npmmirror.com/through2@4.0.2
       vinyl-sourcemaps-apply: registry.npmmirror.com/vinyl-sourcemaps-apply@0.2.1
     dev: true
@@ -12545,10 +12545,10 @@ packages:
     version: 4.2.0
     dev: true
 
-  registry.npmmirror.com/postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.25.tgz}
+  registry.npmmirror.com/postcss@8.4.26:
+    resolution: {integrity: sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.26.tgz}
     name: postcss
-    version: 8.4.25
+    version: 8.4.26
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: registry.npmmirror.com/nanoid@3.3.6
@@ -15559,7 +15559,7 @@ packages:
         optional: true
     dependencies:
       esbuild: registry.npmmirror.com/esbuild@0.14.54
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       resolve: registry.npmmirror.com/resolve@1.22.2
       rollup: registry.npmmirror.com/rollup@2.75.7
       sass: registry.npmmirror.com/sass@1.53.0
@@ -15597,13 +15597,13 @@ packages:
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node@0.0.0
       esbuild: registry.npmmirror.com/esbuild@0.17.19
-      postcss: registry.npmmirror.com/postcss@8.4.25
+      postcss: registry.npmmirror.com/postcss@8.4.26
       rollup: registry.npmmirror.com/rollup@3.26.2
       sass: registry.npmmirror.com/sass@1.53.0
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents@2.3.2
 
-  registry.npmmirror.com/vitepress@0.22.4(@types/react@18.2.14)(sass@1.53.0):
+  registry.npmmirror.com/vitepress@0.22.4(@types/react@18.2.15)(sass@1.53.0):
     resolution: {integrity: sha512-oZUnLO/SpYdThaBKefDeOiVlr0Rie4Ppx3FzMnMyLtJnI5GlBMNjqYqMy/4+umm/iC+ZDJfI+IlDKxv5fZnYzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vitepress/-/vitepress-0.22.4.tgz}
     id: registry.npmmirror.com/vitepress/0.22.4
     name: vitepress
@@ -15612,7 +15612,7 @@ packages:
     hasBin: true
     dependencies:
       '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.5.1
-      '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.14)
+      '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.1.0(@types/react@18.2.15)
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue@2.3.3(vite@2.9.16)(vue@3.2.47)
       prismjs: registry.npmmirror.com/prismjs@1.28.0
       vite: registry.npmmirror.com/vite@2.9.16(sass@1.53.0)
